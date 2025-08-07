@@ -7,7 +7,8 @@ import os
 # --- CẤU HÌNH ---
 # !!! QUAN TRỌNG: BẠN PHẢI THAY THẾ DÒNG DƯỚI ĐÂY BẰNG API KEY THẬT CỦA BẠN !!!
 # Lấy API Key miễn phí tại: https://aistudio.google.com/
-GEMINI_API_KEY = 'GEMINI_API_KEY'
+GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY') 
+
 
 app = Flask(__name__)
 # CORS cho phép trang web của bạn (chạy ở địa chỉ khác) có thể gọi đến máy chủ này
