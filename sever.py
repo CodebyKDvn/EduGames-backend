@@ -24,7 +24,7 @@ def ask_gemini():
     if not user_question:
         return jsonify({'error': 'Câu hỏi không được để trống'}), 400
     
-    if not GEMINI_API_KEY or GEMINI_API_KEY == "DÁN_API_KEY_GEMINI_CỦA_BẠN_VÀO_ĐÂY":
+    if not GEMINI_API_KEY or GEMINI_API_KEY == 'GEMINI_API_KEY':
         print("LỖI: API Key của Gemini chưa được cấu hình.")
         return jsonify({'error': 'API Key của Gemini chưa được cấu hình trên máy chủ.'}), 500
 
